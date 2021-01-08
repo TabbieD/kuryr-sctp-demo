@@ -4,7 +4,7 @@ import sctp
 
 # host = '10.0.1.105'
 # port = 36412
-host = '127.0.0.1'
+host = '0.0.0.0'
 port = 9090
 
 sock = sctp.sctpsocket_tcp(socket.AF_INET)
