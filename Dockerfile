@@ -14,8 +14,7 @@ COPY server.py /server.py
 RUN pip3 --no-cache-dir install -U pip \
     && python3 -m pip install pysctp
 
-RUN useradd -s /bin/bash valjean
-USER valjean
+RUN chmod +x /server.py
 
 EXPOSE 9090
 ENTRYPOINT ["/server.py"]
